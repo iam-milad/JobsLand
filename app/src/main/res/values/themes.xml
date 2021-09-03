@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Theme.JobLand.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.JobLand.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.JobLand.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_job_requests"
+        android:name="com.example.jobland.ui.JobRequests.JobRequestsFragment"
+        android:label="@string/menu_job_requests"
+        tools:layout="@layout/fragment_job_requests" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.jobland.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.jobland.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_jobposts"
+        android:name="com.example.jobland.ui.jobposts.JobpostsFragment"
+        android:label="@string/menu_jobposts"
+        tools:layout="@layout/fragment_jobposts" />
+</navigation>

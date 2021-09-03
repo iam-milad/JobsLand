@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">JobLand</string>
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_job_posts">My Job Posts</string>
+    <string name="my_job_requests">My Job Requests</string>
+    <string name="help_and_support">Help and Support</string>
+    <string name="logout">Logout</string>
+
+    <string name="openNavDrawer"> Navigation Drawer Open</string>
+    <string name="closeNavDrawer"> Navigation Drawer Close</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">My Profile</string>
+    <string name="menu_jobposts">My Job Posts</string>
+    <string name="menu_job_requests">My Job Requests</string>
+
+    <string-array name="options">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+</resources>

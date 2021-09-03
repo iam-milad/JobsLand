@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1056047360033",
+    "project_id": "jobland-2ccf7",
+    "storage_bucket": "jobland-2ccf7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056047360033:android:6ca49b465d6ca529c65b60",
+        "android_client_info": {
+          "package_name": "com.example.jobland"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056047360033-sn81arccv8m119sp8mf013uk47g10hg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlc8xNjoVxtCgPLuKOc_lAIMjWTOpyA1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056047360033-sn81arccv8m119sp8mf013uk47g10hg9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

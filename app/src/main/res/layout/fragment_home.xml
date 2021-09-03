@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+        <TextView
+            android:id="@+id/wannaMakeCashTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Wanna make some cash?"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/enterDestinationTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Enter a destination to find jobs"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/useCurrentLocationBtn"
+            app:layout_constraintStart_toStartOf="@+id/useCurrentLocationBtn"
+            app:layout_constraintTop_toBottomOf="@+id/wannaMakeCashTxt" />
+
+        <Button
+            android:id="@+id/useCurrentLocationBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:text="Use current location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterDestinationTxt"/>
+
+        <TextView
+            android:id="@+id/orId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="- OR -"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/useCurrentLocationBtn"
+            app:layout_constraintStart_toStartOf="@+id/useCurrentLocationBtn"
+            app:layout_constraintTop_toBottomOf="@+id/useCurrentLocationBtn" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/destinationField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+
+            android:hint="Enter your postal code"
+            app:boxBackgroundMode="outline"
+            app:layout_constraintEnd_toEndOf="@+id/useCurrentLocationBtn"
+            app:layout_constraintStart_toStartOf="@+id/useCurrentLocationBtn"
+            app:layout_constraintTop_toBottomOf="@+id/orId"
+            app:startIconDrawable="@drawable/ic_baseline_my_location_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/milesId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:text="Miles Radius"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/destinationField"
+            app:layout_constraintStart_toStartOf="@+id/destinationField"
+            app:layout_constraintTop_toBottomOf="@+id/destinationField" />
+
+        <LinearLayout
+            android:id="@+id/slider_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/destinationField"
+            app:layout_constraintStart_toStartOf="@+id/destinationField"
+            app:layout_constraintTop_toBottomOf="@+id/milesId">
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:stepSize="1.0"
+                    android:value="20"
+                    android:valueFrom="0.0"
+                    android:valueTo="100.0" />
+
+                <TextView
+                    android:id="@+id/text_view_miles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="20.0 miles" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/doneBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginRight="130dp"
+            android:text="Search"
+            app:layout_constraintEnd_toEndOf="@+id/slider_container"
+            app:layout_constraintStart_toStartOf="@+id/slider_container"
+            app:layout_constraintTop_toBottomOf="@+id/slider_container" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

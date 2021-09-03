@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.JobLand" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/pink_p</item>
+        <item name="colorPrimaryDark">@color/light_pink</item>
+        <item name="colorPrimaryVariant">@color/blue_s</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+    </style>
+
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/white</item>
+    </style>
+    <style name="MyDatePickerStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/pink_p</item>
+        <item name="colorAccent">@color/pink_p</item>
+        <item name="colorOnPrimary">@color/pink_p</item>
+    </style>
+
+</resources>

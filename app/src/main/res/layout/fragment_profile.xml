@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profileFullName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:hint="Full Name"
+            app:boxBackgroundMode="outline"
+            app:layout_constraintBottom_toTopOf="@+id/profilePhoneNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileImage2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profilePhoneNumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:hint="Phone Number"
+            app:boxBackgroundMode="outline"
+            app:layout_constraintBottom_toTopOf="@+id/profileStreet"
+            app:layout_constraintEnd_toEndOf="@+id/profileFullName"
+            app:layout_constraintStart_toStartOf="@+id/profileFullName"
+            app:layout_constraintTop_toBottomOf="@+id/profileFullName"
+            app:startIconDrawable="@drawable/ic_baseline_phone_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  street Text Field  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profileStreet"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:hint="Street"
+            app:boxBackgroundMode="outline"
+            app:layout_constraintBottom_toTopOf="@+id/profileCity"
+            app:layout_constraintEnd_toEndOf="@+id/profilePhoneNumber"
+            app:layout_constraintStart_toStartOf="@+id/profilePhoneNumber"
+            app:layout_constraintTop_toBottomOf="@+id/profilePhoneNumber">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  city Text Field  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profileCity"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="5dp"
+            android:hint="City"
+            app:boxBackgroundMode="outline"
+            app:layout_constraintBottom_toTopOf="@+id/profilePostCode"
+            app:layout_constraintEnd_toEndOf="@+id/profileStreet"
+            app:layout_constraintStart_toStartOf="@+id/profileStreet"
+            app:layout_constraintTop_toBottomOf="@+id/profileStreet">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Post Code Text Field  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profilePostCode"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:hint="Postal Code"
+            app:boxBackgroundMode="outline"
+            app:layout_constraintBottom_toTopOf="@+id/profileCountry"
+            app:layout_constraintEnd_toEndOf="@+id/city"
+            app:layout_constraintStart_toStartOf="@+id/profileCity"
+            app:layout_constraintTop_toBottomOf="@+id/profileCity">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Country Text Field  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profileCountry"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:hint="Country"
+            app:boxBackgroundMode="outline"
+            app:layout_constraintBottom_toTopOf="@+id/updateBtn"
+            app:layout_constraintEnd_toEndOf="@+id/profilePostCode"
+            app:layout_constraintStart_toStartOf="@+id/profilePostCode"
+            app:layout_constraintTop_toBottomOf="@+id/profilePostCode">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:backgroundTint="@color/pink_p"
+            android:text="Update"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/profileCountry"
+            app:layout_constraintStart_toStartOf="@+id/profileCountry"
+            app:layout_constraintTop_toBottomOf="@+id/profileCountry" />
+
+    <ProgressBar
+        android:id="@+id/profile_loading_spinner"
+        android:layout_width="152dp"
+        android:layout_height="165dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:visibility="invisible"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:indeterminateTint="@color/pink_p"
+        android:indeterminateTintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toTopOf="@+id/profileFullName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
